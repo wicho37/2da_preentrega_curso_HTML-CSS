@@ -1,0 +1,455 @@
+:root {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 14px;
+  color: #303030;
+  --espaciadoMenu: 2rem;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* ESTILOS DE LA BARRA DE NAVEGACIÓN PRINCIPAL */
+
+/* BARRA NAVEGACIÓN SECUNDARIA */
+#navegacion {
+  border-bottom: #303030 solid 1px;
+}
+
+.nav-barra-top {
+  width: 100vw;
+  height: 45px;
+  background-color: #303030;
+}
+.nav-superior a {
+  color: white;
+  transition: color 250ms ease-out;
+}
+.nav-superior a:hover {
+  color: #fc4537;
+}
+.nav-barra-bottom {
+  width: 100vw;
+  height: calc(140px - 45px);
+  background-color: #ffffff;
+}
+.nav-wraper-top {
+  max-width: 1180px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-superior {
+  align-self: center;
+  display: flex;
+  color: #ffffff;
+  padding: 0 !important;
+}
+.nav-superior li {
+  font-size: 16px;
+}
+
+.nav-superior li,
+.nav-principal li {
+  list-style-type: none;
+  margin-left: var(--espaciadoMenu);
+}
+
+/* BARRA DE NAVEGACIÓN PRINCIPAL - MENÚ PRINCIPAL */
+.nav-wraper-bottom {
+  max-width: 1180px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-principal {
+  display: flex;
+  padding: 0 !important;
+}
+.nav-principal li a {
+  font-size: 20px;
+  color: #303030;
+  text-decoration: none;
+}
+
+/* ESTILO DEL HOVER DE LOS BOTONES DEL MENU PRINCIPAL */
+.nav-principal li a {
+  position: relative;
+  transition: color 250ms ease-in;
+}
+
+.nav-principal li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.nav-principal li a:hover {
+  color: #fc4537;
+}
+.nav-principal li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.logo-nav img {
+  border-right: 1px solid #303030;
+  border-left: 1px solid #303030;
+}
+
+/* ESTILOS DE LA HAMBURGUESA */
+.burger {
+  display: none;
+}
+.burger > div {
+  width: 25px;
+  height: 3px;
+  background-color: #303030;
+  margin: 5px;
+  transition: background-color 500ms ease-in-out;
+}
+/* ESTILOS DE BARRA DE NAVEGACIÓN MOBILE */
+.nav-principal-activa {
+  transform: translateX(0%) !important;
+  z-index: 9;
+}
+.burger-blanco > div {
+  background-color: #ffffff;
+}
+@keyframes nav-link-entra {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.burger > div {
+  transition: all 350ms;
+}
+.efecto-x .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.efecto-x .line-2 {
+  transform: translateX(15px);
+  opacity: 0;
+}
+.efecto-x .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*** Responsive Styles Below 1180 ***/
+@media all and (max-width: 1190px) {
+  .nav-wraper-bottom,
+  .nav-wraper-top {
+    padding-right: var(--espaciadoMenu);
+  }
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+  .nav-wraper-bottom {
+    padding-right: 0px;
+  }
+  .nav-wraper-top {
+    padding-right: var(--espaciadoMenu);
+  }
+  .nav-principal {
+    position: absolute;
+    height: 100vh;
+    background-color: #fc4537;
+    width: 100vw;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 17vh !important;
+    padding-bottom: 15vh !important;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in;
+  }
+  .nav-principal li a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .nav-principal li {
+    opacity: 0;
+    margin-left: 0;
+  }
+  .burger {
+    display: block;
+    z-index: 10;
+    margin-right: var(--espaciadoMenu);
+    cursor: pointer;
+  }
+  .nav-principal li {
+    padding-left: 0;
+  }
+}
+
+/* ESTILOS DE LA NAVEGACIÓN DESPLEGABLE EN DESKTOP */
+.navDesplegable {
+  width: 100vw;
+  height: 350px;
+  padding: 2rem 0px;
+  background-color: white;
+  border-top: 1px solid #303030;
+}
+.navDesplegable--aparece {
+  display: none;
+}
+
+@keyframes animDesplegable--aparece {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animDesplegable--desaparece {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+.navDesplegable__wrapper {
+  max-width: 1180px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 300px minmax(auto, calc(1180px - 300px));
+  grid-auto-rows: 100%;
+  /* background-color: pink; */
+}
+
+.navDesplegable__categorias {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-right: solid 1px #3d57ee;
+}
+li.navDesplegable__item {
+  list-style: none;
+}
+
+/* LINKS DE CATEGORIAS DE MOTOS EN DESPLEGABLE DESKTOP */
+.navDesplegable__item a {
+  text-decoration: none;
+  color: #3d57ee;
+  font-size: 20px;
+  position: relative;
+  transition: color 250ms;
+}
+.navDesplegable__item a:hover {
+  color: #fc4537;
+}
+.navDesplegable__item a:focus {
+  color: #fc4537;
+}
+.navDesplegable__item a:focus::after {
+  transform: scaleX(1);
+}
+.navDesplegable__item a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.navDesplegable__item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navDesplegable__moto {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+}
+.navDesplegable__moto--off {
+  display: none;
+}
+
+/* ORGANIZA EL ALTO DEL CARRUSEL DE LA MOTO */
+.navDesplegable__moto > div {
+  margin-top: 30px;
+}
+
+/* BOTONES DEL SELECTOR DE MOTODS EN EL MENÚ DESPLEGADO */
+.navDesplegable__wrapper button {
+  position: absolute;
+  top: calc(50% - 40px);
+}
+.navDesplegable__wrapper button.prev {
+  left: 20px;
+  border: none;
+  width: 36px;
+  height: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(https://yamaha-mundoyamaha.com/wp-content/uploads/2020/07/prev-menu.png);
+}
+.navDesplegable__wrapper button.next {
+  right: 0;
+  border: none;
+  width: 36px;
+  height: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(https://yamaha-mundoyamaha.com/wp-content/uploads/2020/07/next-menu.png);
+}
+
+/* BOTONES DE CADA MOTO EN EL CARRUSEL */
+.navDesplegable__itemMoto a {
+  color: #3d57ee;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: color 250ms;
+}
+.navDesplegable__itemMoto a img {
+  align-self: center;
+}
+
+.navDesplegable__itemMoto a p {
+  position: relative;
+  display: block;
+  align-self: center;
+  top: -4px;
+}
+
+.navDesplegable__itemMoto a p::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.navDesplegable__itemMoto a:hover {
+  color: #fc4537;
+}
+.navDesplegable__itemMoto a:hover p::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* submenu */
+.dropdown_menu {
+  position: relative;
+}
+.dropdown_menu:hover ul,
+.dropdown_menu ul:hover {
+  visibility: visible;
+}
+
+.dropdown_menu ul {
+  position: absolute;
+
+  left: -50%;
+  visibility: hidden;
+}
+.dropdown_wrapper {
+  border: 1px solid black;
+  margin-top: 15px;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding: 20px 30px;
+}
+.dropdown_menu li {
+  margin-left: 0;
+}
+
+.cart-number {
+  position: fixed;
+  background: #fc4537;
+  color: white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: -5px;
+  text-align: center;
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+  .dropdown_menu ul {
+    display: none;
+  }
+}
+
+/* SHOPPING CART */
+nav .shopping_cart {
+  width: 43px;
+  height: 37px;
+  background-image: url(https://yamaha-mundoyamaha.com/wp-content/uploads/2021/01/shopping_cart.png);
+  margin-left: 30px;
+  cursor: pointer;
+  background-size: 43px 37px;
+}
+
+nav .shopping_cart:hover {
+  background-image: url(https://yamaha-mundoyamaha.com/wp-content/uploads/2021/01/shopping_cart_over.png);
+}
+/*** Media Query para retina (swap de imagen) ***/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  nav .shopping_cart {
+    background-image: url(https://yamaha-mundoyamaha.com/wp-content/uploads/2021/01/shopping_cart2x.png);
+  }
+
+  nav .shopping_cart:hover {
+    background-image: url(https://yamaha-mundoyamaha.com/wp-content/uploads/2021/01/shopping_cart_over2x.png);
+  }
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+  nav .shopping_cart {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,289 @@
+//Donde está el glider
+var gliderPosicion;
+//Variables de los gliders que son los slider x igual número de items del menu
+var elGlider1;
+var elGlider2;
+var elGlider3;
+var elGlider4;
+var elGlider5;
+var elGlider6;
+var elGlider7;
+var elGlider8;
+var elGlider9;
+var losGliders = [elGlider1, elGlider2, elGlider3, elGlider4, elGlider5, elGlider6, elGlider7, elGlider8, elGlider9];
+// FUNCIONES MENÚ DESPLEGADO
+const slidersSubmenu = [
+  document.querySelector('.navDesplegable__moto--1'),
+  document.querySelector('.navDesplegable__moto--2'),
+  document.querySelector('.navDesplegable__moto--3'),
+  document.querySelector('.navDesplegable__moto--4'),
+  document.querySelector('.navDesplegable__moto--5'),
+  document.querySelector('.navDesplegable__moto--6'),
+  document.querySelector('.navDesplegable__moto--7'),
+  document.querySelector('.navDesplegable__moto--8'),
+  document.querySelector('.navDesplegable__moto--9'),
+];
+// Configuración
+const btnMotos = document.querySelector('.navPrincipal---motos');
+const desplegableMotos = document.querySelector('.navDesplegable');
+const navegacion = document.querySelector('#navegacion');
+const todoMenu = document.querySelector('.nav-principal').children;
+const velocidadSaleMenu = 350;
+
+const navSlide = function () {
+  const burger = document.querySelector('.burger');
+  const navPrincipal = document.querySelector('.nav-principal');
+  const navLinks = document.querySelectorAll('.nav-principal li');
+  // Toggle nav
+  burger.addEventListener('click', function () {
+    navPrincipal.classList.toggle('nav-principal-activa');
+    burger.classList.toggle('burger-blanco');
+    //Animate links
+    navLinks.forEach((elemento, index) => {
+      const tiempoDeEspera = index / 7 + 0.5;
+
+      if (elemento.style.animation) {
+        elemento.style.animation = '';
+      } else {
+        elemento.style.animation = 'nav-link-entra 500ms ease ' + tiempoDeEspera + 's forwards';
+      }
+    });
+    burger.classList.toggle('efecto-x');
+  });
+};
+
+function navAbre() {
+  const mobileActivo = document.querySelector('.nav-principal-activa');
+  if (mobileActivo) {
+    return;
+  } else {
+    desplegableMotos.classList.remove('navDesplegable--aparece');
+    desplegableMotos.style.animation = 'animDesplegable--aparece ' + velocidadSaleMenu + 'ms ease';
+    btnMotos.removeEventListener('mouseover', navAbre);
+    navegacion.addEventListener('mouseleave', navCierra);
+    //Activo primer panel 1 del slider
+    activarPanel(1);
+  }
+  for (let step = 1; step < todoMenu.length; step++) {
+    todoMenu[step].addEventListener('mouseover', navCierra);
+  }
+}
+
+function navCierra() {
+  const mobileActivo = document.querySelector('.nav-principal-activa');
+  if (mobileActivo) {
+    return;
+  } else {
+    desplegableMotos.style.animation = 'animDesplegable--desaparece ' + velocidadSaleMenu + 'ms ease forwards';
+    setTimeout(function () {
+      desplegableMotos.classList.add('navDesplegable--aparece');
+    }, velocidadSaleMenu);
+
+    navegacion.removeEventListener('mouseleave', navCierra);
+    btnMotos.addEventListener('mouseover', navAbre);
+  }
+  for (let step = 1; step < todoMenu.length; step++) {
+    todoMenu[step].removeEventListener('mouseover', navCierra);
+  }
+}
+
+// Activar app
+function desplegarMenuDesktop() {
+  btnMotos.addEventListener('mouseover', function () {
+    navAbre();
+  });
+}
+
+// Activar panel sobre el botón que se hizo clic
+function activarPanel(target) {
+  //Desactivar todos los contenidos
+  for (let index = 0; index < slidersSubmenu.length; index++) {
+    if (!slidersSubmenu[index].classList.contains('navDesplegable__moto--off'))
+      slidersSubmenu[index].classList.add('navDesplegable__moto--off');
+  }
+  //Activar el contenido correcto
+  slidersSubmenu[target - 1].classList.remove('navDesplegable__moto--off');
+  comenzarGliderMenu(target);
+}
+
+// GLIDER MENU
+function comenzarGliderMenu(target) {
+  target = target - 1;
+  if (losGliders[target] != undefined) {
+    losGliders[target].refresh(true);
+    return;
+  }
+  // Largo del slider
+  var largoSlider = slidersSubmenu[target].querySelector(
+    '.navDesplegable__moto--glider' + (target + 1)
+  ).childElementCount;
+  if (largoSlider >= 3) {
+    largoSlider = 3;
+  }
+
+  // Activo Glider
+
+  switch (target) {
+    case 0:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev1',
+            next: '.glider-next1',
+          },
+        }
+      );
+      break;
+    case 1:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev2',
+            next: '.glider-next2',
+          },
+        }
+      );
+      break;
+    case 2:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev3',
+            next: '.glider-next3',
+          },
+        }
+      );
+      break;
+    case 3:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev4',
+            next: '.glider-next4',
+          },
+        }
+      );
+      break;
+    case 4:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev5',
+            next: '.glider-next5',
+          },
+        }
+      );
+      break;
+    case 5:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev6',
+            next: '.glider-next6',
+          },
+        }
+      );
+      break;
+    case 6:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev7',
+            next: '.glider-next7',
+          },
+        }
+      );
+      break;
+    case 7:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev8',
+            next: '.glider-next8',
+          },
+        }
+      );
+      break;
+    case 8:
+      losGliders[target] = new Glider(
+        slidersSubmenu[target].querySelector('.navDesplegable__moto--glider' + (target + 1)),
+        {
+          slidesToShow: largoSlider,
+          draggable: false,
+          duration: 3,
+          rewind: true,
+          arrows: {
+            prev: '.glider-prev9',
+            next: '.glider-next9',
+          },
+        }
+      );
+      break;
+
+    default:
+      break;
+  }
+}
+
+window.onload = function () {
+  navSlide();
+  desplegarMenuDesktop();
+};
+
+function updateCartNumber() {
+  let counter = 0;
+  jQuery('input.qty:not(.ignore)').each(function () {
+    counter += parseInt(jQuery(this).val());
+  });
+  jQuery('.cart-number').html(counter);
+}
+
+jQuery('.woocommerce').on('change', '.cart_item input.qty', function () {
+  updateCartNumber();
+});
+jQuery('.product-remove > .remove').on('click', function () {
+  jQuery(jQuery(jQuery(this)).parents('.cart_item'))
+    .find('input.qty')
+    .addClass('ignore');
+  updateCartNumber();
+});

@@ -1,0 +1,182 @@
+*{
+   margin: 0%;
+   padding: 0%;
+}
+
+html, body {
+    height: 80%;
+    width: 100%;
+}
+
+body {
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    text-align: center;
+}
+
+main {
+   height: 100%;
+   margin-top: 70px;
+}
+
+section {
+    height: 100%;
+    padding: 15px 8px;
+    position: relative;
+    width: 100%;
+ 
+}
+
+header {
+    background-color: rgba(28, 8, 3, 0.297) ;
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;  
+    height:  50px;
+}
+ header img {
+    height: 100%;
+ }
+header .container-menu, header nav {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none; 
+    height: 100%;
+    align-items: center;
+}
+
+/* header-nosotros */
+.section1{
+    height: auto;
+    background-color: antiquewhite;
+    border-bottom: #181616 solid 3px;
+    display: flex;
+    margin-top: 54px;
+}
+.section2 {display: flex;
+    align-items: center;
+    height: auto;
+    background-color: cadetblue;
+    border-bottom: #181616 solid 3px;
+}
+ main {
+    display: flex;
+    gap: 30px;
+    align-items: center; 
+  
+    
+}
+
+main div iframe {
+    display: flex;
+flex-direction: column;}
+
+.galeria {
+    background-color:rgb(223, 142, 36) ;
+    height: 90% ;
+}
+
+.galeria h2 {
+    margin: 35px;
+ }
+
+ .galeria h3 {
+    margin: 20px;
+ }
+
+.galeria div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.galeria div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.galeria div div img {
+    height:100%;
+    width: auto;
+}
+
+/* html- servicios */
+
+.servi {
+    display: flex;
+}
+
+.serfinan {
+    display: flex;
+    align-items: center;
+    margin: 24px;
+    padding: 15px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.serviseguro{
+    display: flex;
+    height: 220px;
+    text-align: left;
+    margin: 15px;
+    padding-top: 80px;
+    padding-right: 5%;
+    padding-bottom: 60px;
+    padding-left: 6%;
+    font-size: 100%;
+    background-color: aqua;
+
+}
+
+
+
+
+.noticia{
+    margin: 25px;
+    border: outset;
+}
+
+.imagPoli div img{
+    border: #ffc107 solid 20px;
+} 
+ 
+
+
+.contacto {
+    margin: 35px;
+    
+}
+.contacto  {
+    margin: 150px 0 150 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.contacto div{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto div div{
+    display: flex;
+    align-items: center;
+    justify-content: ;
+}
+
+.contacto div div img{
+    height: 70px;
+    width: auto;
+}
