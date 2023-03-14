@@ -35,8 +35,6 @@ section {
     position: relative;
     width: 100%;
 }
-
-
 header {
     background-color: rgba(28, 8, 3, 0.297) ;
     padding: 2px;
@@ -73,28 +71,7 @@ header .container-menu, header nav {
 }
 
 
-/* header-nosotros-html */
-.section1{
-    height: auto;
-    background-color: antiquewhite;
-    border-bottom: #181616 solid 3px;
-    display: flex;
-    margin-top: 54px;
-}
-.section2 {
-    display: flex;
-    align-items: center;
-    height: auto;
-    background-color: cadetblue;
-    border-bottom: #181616 solid 3px;
-}
-.section1:nth-child(1){
-    text-align: left;
-}
-/* cierre header-nosotros-html  */
-
-
- main {
+main {
     display: flex;
     gap: 30px;
     align-items: center; 
@@ -142,34 +119,14 @@ main div iframe {
 .galeria div div img {
     height:100%;
     width: auto;
-}
-
-/* *{ */
-/* 	font-family: cursive; */
-/* 	font-weight: normal; */
-/* 	box-sizing: border-box; */
-/* } */
-/*  */
-
-/* html- servicios */
-
-.servicios{
-    padding: 15px 8px;
-    position: relative;
-    width: 100%;
-}
-
-.serfinan{
-    display: flex;
-    align-items: center;
-    text-align: left;
-    position: relative;
-    top: 38px;
     background-color: #beefea;
 }
-.serfinan div img{
-    border: 10px #b56565e0 solid;
+.automat, .deport, .cuatrim {
+    border-radius: 50%;
 }
+
+
+
 
 .noticia{
     margin: 25px;
@@ -178,7 +135,21 @@ main div iframe {
 
 .imagPoli div img{
     border: #ffc107 solid 20px;
-} 
+}
+.imagPoli{
+    height: max-content;
+}
+
+.m-pagos{
+    border:#181616 solid 2px ;
+    border-radius: 50%;
+    margin: 20px 10px;
+    background-color: #85a8a4;
+}
+.m-pagos h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
 
 .contacto {
     margin: 35px;
@@ -216,3 +187,237 @@ main div iframe {
 .contacto div div a{
    border: 2px black solid;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* index-nosotros-html */
+.section1{
+    height: auto;
+    background-color: antiquewhite;
+    border-bottom: #181616 solid 3px;
+    display: flex;
+    margin-top: 54px;
+}
+.section2 {
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: cadetblue;
+    border-bottom: #181616 solid 3px;
+}
+.section1:nth-child(1){
+    text-align: left;
+}
+/* cierre index-nosotros-html  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* index - .galeria */
+.content{
+    padding: 94px;
+    background-color: #64cba8f5;
+    margin-top: 54px;
+}
+.content div h4{
+    border:outset;
+    padding: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: medium;
+    text-transform: uppercase;
+}
+.content div img{
+    border-left: solid 2px rgb(96, 96, 189);
+}
+.content div img{
+    border-right: solid 2px rgb(96, 96, 189); ;
+}
+.content:nth-child(3){
+    border-bottom: outset 44px;
+}
+/* html- servicios */
+
+.servicios{
+    padding: 15px 8px;
+    position: relative;
+    width: 100%;
+}
+
+.serfinan{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    top: 38px;
+    background-color: #beefea;
+}
+.serfinan div img{
+    border: 10px #b56565e0 solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
