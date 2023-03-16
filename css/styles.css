@@ -350,7 +350,6 @@ main div iframe {
     top: 39px;
     background: wheat;
     margin-bottom: 40px;
-    display: inline-flex;
     align-items: center;
     height: 75%;
     padding: 15px 8px;
@@ -361,7 +360,7 @@ main div iframe {
     margin: 15px;
     border: black 2px solid;
 }
-}
+
 
 
 
