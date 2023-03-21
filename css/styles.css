@@ -3,25 +3,7 @@
    padding: 0%;
   
 }
-
-/* vista mobil */
-
-@media screen and (max-width: 576px) { 
-    header {
-        background-color: rgba(149, 143, 208, 0.5) ;
-    }
-    .menu-header {
-        display: block;
-    }
-    .gale .gale2 ul {
-        display: flex;
-    }
-} 
-/* cierre vista mobil*/
-
-
-
-    html, body {
+ html, body {
     height: 75%;
     width: 97%;
 }
@@ -65,7 +47,6 @@ header .container-menu, header nav {
     height: 100%;
     align-items: center;
 }
-
 .menu-header li a {
    text-decoration: none;
    
@@ -76,7 +57,6 @@ header .container-menu, header nav {
     padding: 6px;
 }
 
-
 main {
     display: flex;
     gap: 30px;
@@ -84,13 +64,11 @@ main {
     height: 43%;
     margin-top: 59px;
 }
-
 .section1 div h1 {
     font-size: 2.8em;
     text-transform: uppercase;
     margin: 12px;
 }
-
 .section1 div p {
     margin: 20px;
 }
@@ -105,21 +83,18 @@ main div iframe {
     height: 500px ;
     border-top: #181616 solid 2px;
 }
-
 .galeria h2 {
     margin: 35px;
- }
+}
 
- .galeria h3 {
+.galeria h3 {
     margin: 20px;
  }
-
 .galeria div {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-
 .galeria div div {
     display: flex;
     flex-direction: column;
@@ -134,21 +109,16 @@ main div iframe {
     border-radius: 50%;
 }
 
-
-
-
 .noticia{
     margin: 25px;
     border: outset;
 }
-
 .imagPoli div img{
     border: #ffc107 solid 20px;
 }
 .imagPoli{
     height: max-content;
 }
-
 .m-pagos{
     border:#181616 solid 2px ;
     border-radius: 50%;
@@ -164,40 +134,32 @@ main div iframe {
 .m-pagos img{
     margin: 0 10px 0 10px;
 }
-
 .contacto {
-    margin: 35px;
-    
+    margin: 35px;   
 }
 .contacto  {
     margin: 150px 0 150 0;
     display: flex;
     justify-content: center;
     gap: 40px;
-    
 }
-
 .contacto div{
     display: flex;
     gap: 15px;
     
 }
-
 .contacto div div{
     display: flex;
     align-items: center;
 }
-
 .contacto div div img{
     height: 70px;
     width: 70px;
 }
-
 .contacto h2{
     display: flex;
     align-items: center;
 }
-
 .contacto div div a{
    border: 2px black solid;
 }
@@ -205,7 +167,7 @@ main div iframe {
 .sedes{
     background-color: rgb(223, 142, 36, 0.8)
 }
-.sedes ul{
+.sedes ul {
     display: flex;
     align-items:center;
     margin: 15px 15px;
@@ -215,12 +177,16 @@ main div iframe {
     height: 100px;
     text-decoration: none;
     list-style: none;
-    
+}
+.sedes ul li {
+    text-align: justify;
+    margin: 0 30px;
 }
 .sedes ul li a{
     margin: 0 15px 0 15px;
     align-items: center;
 }
+
 
 
 /* index-nosotros-html */
@@ -317,8 +283,8 @@ main div iframe {
 /* cierre index galeria html*/
 
 
-/* inicio html- servicios */
 
+/* inicio html- servicios */
 
 .servicios {
     height: 95%;
@@ -387,47 +353,29 @@ main div iframe {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* inicio index contactanos */
 .container{
     width: 100%;
     background-color: #beefea;
 }
-
 #main-area{
     height: 90%;
-    margin-top: 90px;
+    margin-top: 24px;
+    width: 103%;
 }
-
 #main-area .post{
     
     width: 100%;
     background-color: antiquewhite;
     border: solid;
 }
-
-
 #contacto #formulario, #contacto #mapa {
     float: left;
     width: 50%;
 }
-
 #contacto #formulario {
     text-align: left;
 }
-
 #contacto #mapa iframe {
 	border: solid;
 	height: 480px;
@@ -435,20 +383,31 @@ main div iframe {
     margin-bottom: 10px;
     border: solid;
 }
-
 #contacto input, #contacto textarea {
-	width: 95%;
+	width: 90%;
 	color: rgba(0, 210, 100, 1);
 	border-radius: 0.25em;
 	border: 0.09375rem solid rgb(150, 58, 58);
 	margin: 0.65em;
 	padding: 0.65em;
 }
-
 #contacto input[type="submit"] {
     background: linear-gradient(rgba( 0, 210, 100, 1), rgba(0, 130, 60, 1));
     border: 0;
     color: rgba(255, 255, 255, 1);
+}
+label{
+    display: flex;
+    width: 95%;
+}
+#formulario form div p label{
+    margin-top: 20px;
+}
+#formulario div input{
+    width: 20px;
+}
+
+/* cierre index contactanos */
 
 
 
@@ -462,6 +421,88 @@ main div iframe {
 
 
 
+
+
+
+
+
+
+
+
+/* inicio html-noticias*/
+
+
+.aside{
+    height: 1060px;
+    width: 80px;
+    padding-left: 180px;
+    margin-top: 110px;
+}
+.row{
+    
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 2fr;
+}
+.row .card {
+    margin: 30px;
+    height: 390px;
+
+} 
+.card .card-body .card-title{
+    margin: 10px 0;
+    font-family: math;
+    color: rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.card .card-body .card-text{
+    color: crimson;
+    font-family: system-ui;
+    text-align: justify;
+}
+
+.card .card-body .card .btn{
+    text-decoration: none;
+}   
+.card .card-body .card .btn:hover{
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vista mobil 
+
+@media screen and (max-width: 576px) { 
+    header {
+        background-color: rgba(149, 143, 208, 0.5) ;
+    }
+    .menu-header {
+        display: block;
+    }
+    .gale .gale2 ul {
+        display: flex;
+    }
+} 
+cierre vista mobil*/
 
 
 
