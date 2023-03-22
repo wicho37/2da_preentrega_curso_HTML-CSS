@@ -5,12 +5,18 @@
 }
  html, body {
     height: 75%;
-    width: 97%;
+    width: 100%;
 }
 body {
     position: absolute;
     font-family: 'Franklin Gothic Medium', sans-serif;
     text-align: center;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 section {
     height: 100%; 
@@ -467,20 +473,76 @@ aside div h1{
 
 
 
-/* vista mobil 
+/* vista mobil */
 
-@media screen and (max-width: 576px) { 
+@media screen and (min-width: 576px) { 
     header {
         background-color: rgba(149, 143, 208, 0.5) ;
+        height: 70px;
+        width: 79%;
     }
-    .menu-header {
-        display: block;
+    .contenedor main{
+        margin-right: -45px;
+        gap: 10px;
+        margin:90px 0 ;
     }
-    .gale .gale2 ul {
+    main div p {
+        font-size: 16px;
+        margin: 0 12px;
+    }
+    .galeria div div h3{
+        font-size: 13px;
+        margin: 5px;
+    }
+    .contenedor .galeria div div {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-} 
-cierre vista mobil*/
+    .contenedor .galeria{
+        height: 335px;
+        padding: 0%;
+        background-color: white;
+    }
+    .galeria div div .automat{
+        width: 85%;
+    }
+    .contenedor .galeria h2{
+        margin: 20px;
+    }
+    .contenedor .noticia{
+        margin: 5px;
+        padding-left: 0%;
+        margin-top: 0;height: 35px;
+    }
+    .imagPoli div img{
+        width: 90%;
+        border: #96e3e2 solid 20px;
+    }
+    .m-pagos{
+        width: 97%;
+    }
+    .contenedor .contacto{
+        display: inline-block;
+        height: 210px;
+        width: 50%;
+    }
+    .contacto h2{
+        margin-left: 50px;
+        padding: 13px;
+    }
+    .sedes nav ul li{
+        text-align: justify;
+        margin: 5px;
+        font-size: 11px;
+    }
+    .sedes{
+        background-color: rgb(120 204 216 / 80%);
+    }
+
+}
+
+/*cierre vista mobil*/
 
 
 
