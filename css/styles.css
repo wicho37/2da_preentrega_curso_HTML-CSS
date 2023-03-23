@@ -3,7 +3,7 @@
    padding: 0%;
   
 }
- html, body {
+ html body {
     height: 75%;
     width: 100%;
 }
@@ -14,7 +14,7 @@ body {
 }
 .contenedor{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -37,7 +37,7 @@ header img {
     height: 100%;
 }
 header .container-menu, header nav {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 .menu-header {
@@ -62,7 +62,7 @@ main {
     gap: 30px;
     align-items: center; 
     height: 50%;
-    margin-top: 65px;
+    margin-top: 65px;width: 109%;
 }
 .section1 div h1 {
     font-size: 2.8em;
@@ -112,11 +112,12 @@ main div iframe {
 }
 
 .noticia{
-    margin: 25px;
+    margin: 25px 0;
     border: outset;
 }
 .imagPoli div img{
     border: #ffc107 solid 20px;
+    width: 95%;
 }
 .imagPoli{
     height: max-content;
@@ -126,7 +127,7 @@ main div iframe {
     border-radius: 50%;
     margin: 15px 10px;
     background-color: #85a8a4;
-    width: 100%;
+    width: 98%;
 }
 .m-pagos h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -412,28 +413,37 @@ label{
 
 
 /* inicio html-noticias*/
+
 aside{
-    height: 1060px;
+  height: 930px;
+}
+aside div{
+    margin-top: 90px;
+}
+aside div div{
     width: 100%;
-    padding-left: 180px;
-    margin-top: 130px;
 }
 aside div h1{
     background-image:url("../imag/estacion.jpg");
-    height: 210px;
+    height: 195px;
     margin: 15px;
     font-size: 135px;
     color: darkgray;
-    
+    width: 100%;
 }
 .row{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows: 2fr;
+    display: flex;
+    height: 550px;
+    justify-content: center;
+   
+   
 }
 .row .card {
     margin: 30px;
     height: 390px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
 } 
 .card .card-body .card-title{
     margin: 10px 0;
@@ -446,6 +456,7 @@ aside div h1{
     color: crimson;
     font-family: system-ui;
     text-align: justify;
+    margin-bottom: 25px;
 }
 .btn{
     text-decoration: none;
@@ -473,18 +484,31 @@ aside div h1{
 
 
 
-/* vista mobil */
+/* vista mobil */ 
 
-@media screen and (min-width: 576px) { 
-    header {
-        background-color: rgba(149, 143, 208, 0.5) ;
-        height: 70px;
-        width: 79%;
+@media screen and (min-width: ≥576px) { 
+    header{
+        background-color: #93c7c7;
+        padding: 2px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        height: 50px;
     }
+
     .contenedor main{
         margin-right: -45px;
         gap: 10px;
         margin:90px 0 ;
+    }
+    main {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        height: 50%;
+        margin-top: 65px;
+        width: 109%;
     }
     main div p {
         font-size: 16px;
@@ -500,49 +524,60 @@ aside div h1{
         align-items: center;
     }
     .contenedor .galeria{
-        height: 335px;
-        padding: 0%;
-        background-color: white;
+        background-color: rgb(255,255,255);
+        height: 1010px;
+        border-top: #181616 solid 2px;
     }
+    .galeria div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: 900px;
+    }
+    .galeria div div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
     .galeria div div .automat{
         width: 85%;
     }
     .contenedor .galeria h2{
-        margin: 20px;
+        margin: 35px;
     }
     .contenedor .noticia{
-        margin: 5px;
-        padding-left: 0%;
-        margin-top: 0;height: 35px;
+        margin: 25px 0;
+        border: outset;
     }
+
     .imagPoli div img{
-        width: 90%;
+        width: 95%;
         border: #96e3e2 solid 20px;
     }
     .m-pagos{
         width: 97%;
     }
     .contenedor .contacto{
-        display: inline-block;
-        height: 210px;
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 28%;
     }
     .contacto h2{
         margin-left: 50px;
         padding: 13px;
     }
-    .sedes nav ul li{
-        text-align: justify;
-        margin: 5px;
-        font-size: 11px;
-    }
-    .sedes{
-        background-color: rgb(120 204 216 / 80%);
-    }
 
+    .sedes{
+        background-color:rgb(190 235 234 / 80%);
+    }
+    .sedes ul li {
+        text-align: justify;
+        margin: 0 30px;
+    }
 }
 
-/*cierre vista mobil*/
+/* cierre vista mobil */
 
 
 
