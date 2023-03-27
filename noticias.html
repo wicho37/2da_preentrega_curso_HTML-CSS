@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="contenedor">
     <header>
         <div>
           <a href="index.html"><img src="./imag/logo1.jpeg" alt="hombre montado en su moto haciendo derrape en la arena"></a>
@@ -27,109 +28,120 @@
         </div>
     </header>
     
-    <aside>
-      <div>
+    <aside class="mi-noti">
+      <div class="notitulo">
         <div>
           <h1>my news</h1>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-              <div class="card" style="width: 300px 200px">
-                  <img src="./imag/prueba-manejo.png" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">nueva tienda</h5>
-                    <p class="card-text">Abrimos nuestra nueva tienda de Ayacucho, 
+        <div class="cards">
+          <article class="card">
+              <div>
+                  <h2>nueva tienda</h2>
+              </div>    
+              <img src="./imag/prueba-manejo.png" class="card-img" alt="aqui te contamos como puedes hacer la prueba de manejo para q asi compres tu moto soñada">
+              <div class="content">
+                  <p class="card-text">Abrimos nuestra nueva tienda de Ayacucho, 
                       para estar presentes en tu camino y acompañarte en tus aventuras.
                       Aquí te contamos dónde encontrarla, y asi hacer tu pruba de manejo solo con tu documento de identidad.</p>
-                    <a href="./index.html" class="btn">Visitanos</a>
-                  </div>
               </div>
-              <div  class="card" style="width: 300px 200px">
-                  <img src="./imag/soat2023.png" class="card-img" alt="imagen dando info de como quedo en pesos para este 2023...">
-                  <div class="card-body">
-                    <h5 class="card-title">nuestro soat</h5>
-                    <p class="card-text">El SOAT Colombia ha presentado algunos cambios es su tarifa para este inicio de año 2023.
-                       Recuerda que, si ya adquiriste tu moto extreme tambien tienes soat gratis. </p>
-                    <a href="#" class="btn">¡Te contamos como!</a>
-                  </div>
-              </div>           
-              <div class="card" style="width: 300px 200px">
-                    <img src="./imag/cuidados.png" class="card-img" alt="no da info de como cuidar nuestra moto extreme">
-                    <div class="card-body">
-                      <h5 class="card-title">Los cuidados de tu moto extreme, ¡alargarán su vida útil!</h5>
-                      <p class="card-text">Los cuidados de tu moto, son pequeñas acciones que realizas con frecuencia y no te quitan mucho tiempo,
-                         para alargar su vida útil y mantener su alto rendimiento extreme.</p>
-                      <a href="#" class="btn">Algunos tip.</a>
-                    </div>
+              <footer><a href="#" class="btn">nuestras sedes</a></footer>
+          </article>
+                  
+           <article class="card">
+              <div>
+                  <h2>nuestro soat</h2>
+              </div>    
+              <img src="./imag/soat2023.png" class="card-img" alt="imagen dando info de como quedo en pesos para este 2023...">
+              <div class="content">
+                  <p class="card-text">El SOAT Colombia ha presentado algunos cambios es su tarifa para este inicio de año 2023.
+                      Recuerda que, si ya adquiriste tu moto extreme tambien tienes soat gratis.</p>
               </div>
-              <div class="card" style="width: 300px 200px"">
-                  <img src="./imag/seguros.png" class="card-img" alt="nos muestra q compania de seguro tiene nuestra compañia">
-                  <div class="card-body">
-                    <h5 class="card-title">Respaldo y acompañamiento: eso te brinda el seguro SBS</h5>
-                    <p class="card-text">El seguro SBS es el respaldo que necesitas para tu motocicleta,
-                       porque te permite moverte con tranquilidad y te protege para casos de hurtos, accidentes, catastrofes y mas...</p>
-                    <a href="#" class="btn">Requisitos.</a>
-                  </div>
+              <footer><a href="#" class="btn">¡Te contamos como!</a></footer>
+          </article>
+                  
+          <article class="card">
+              <div>
+                  <h2>Los cuidados de tu moto extreme, ¡alargarán su vida útil!</h2>
               </div>
-              <div class="card" style="width: 300px 200px"">
-                   <img src="./imag/dia-sin-iva.png" class="card-img" alt="no lleva a una pagina donde nos informa todo lo relacionado con el dia sin iva">
-                   <div class="card-body">
-                     <h5 class="card-title">SUFI, Nuevo botón: ¡No más filas para obtener tu crédito!</h5>
-                     <p class="card-text">El Día sin IVA es una de las actividades económicas más esperadas de este mes. En Mundo extreme nos preparamos para recibir tu pedido virtual de la manera más eficaz.
-                        Si quieres saber cómo funciona este próximo Día sin IVA, ¡quédate a leer este artículo!</p>
-                     <a href="#" class="btn">Día sin IVA.</a>
-                   </div>
+              <img src="./imag/cuidados.png" class="card-img" alt="no da info de como cuidar nuestra moto extreme">
+              <div class="content">
+                   <p class="card-text">Los cuidados de tu moto, son pequeñas acciones que realizas con frecuencia y no te quitan mucho tiempo,
+                      para alargar su vida útil y mantener su alto rendimiento extreme.</p>
               </div>
-        </div>
+          </article>
+          <article class="card">
+              <div>
+                  <h2>Respaldo y acompañamiento: eso te brinda el seguro SBS</h2>
+              </div>
+              <img src="./imag/seguros.png" class="card-img" alt="nos muestra q compania de seguro tiene nuestra compañia">
+              <div class="content">
+                  <p class="card-text">El seguro SBS es el respaldo que necesitas para tu motocicleta,
+                     porque te permite moverte con tranquilidad y te protege para casos de hurtos, accidentes, catastrofes y mas...</p>
+              </div>
+          
+          </article>
       </div>
       </div>
     </aside>
 
 
     <article class="m-pagos">
-      <h3>principoales medios de pago</h3>
-      <img src="./imag/visa.png" alt="medio de pago con tarjeta visa">
-      <img src="./imag/mastercard.png" alt="medio de pago con tarjeta mastercard">
-      <img src="./imag/american-express-png.png" alt="medio de pago con tarjeta de credito american-express">
-      <img src="./imag/google-pay-png.png" alt="medio de pago en la aplicacion pay">
+        <h3>principoales medios de pago</h3>
+        <img src="./imag/visa.png" alt="medio de pago con tarjeta visa">
+        <img src="./imag/mastercard.png" alt="medio de pago con tarjeta mastercard">
+        <img src="./imag/american-express-png.png" alt="medio de pago con tarjeta de credito american-express">
+        <img src="./imag/google-pay-png.png" alt="medio de pago en la aplicacion pay">
     </article>
+
     <footer class="contacto">
-      <h2>contáctanos</h2>
       <div>
-        <div>
-          <a href="./contactanos.html"><img src="./imag/telefono.jpg" alt="icono de telefono para ir a la llamada"></a>
-        </div>
-        <div>
-          <a href="./contactanos.html"><img src="./imag/icono-correo.jpg" alt="icono de mail para ir a mandar un correo con nuestro requerimiento"></a>
-        </div>
-        <div>
-          <a href="./contactanos.html"><img src="./imag/icono-mapa.png" alt="mapa donde puedes ver donde me encuentro"></a>
-        </div>
-      </div>
-      <div>
-        <h2>nuestras redes</h2>
-        <div class="redes">
           <div>
-            <a href="https://www.facebook.com/yamahamundoyamaha"><img src="./imag/icono.png" alt="icono del facebook para ver mi sitio"></a>
+              <div>
+                 <h2>contáctanos</h2>
+              <div>
+              <div>
+                <div>
+                  <a href="./contactanos.html"><img src="./imag/telefono.jpg" alt="icono de telefono para ir a la llamada"></a>
+                </div>
+                <div>
+                  <a href="./contactanos.html"><img src="./imag/icono-correo.jpg" alt="icono de mail para ir a mandar un correo con nuestro requerimiento"></a>
+                </div>
+                <div>
+                  <a href="./contactanos.html"><img src="./imag/icono-mapa.png" alt="mapa donde puedes ver donde me encuentro"></a>
+                </div>
+              </div>
           </div>
           <div>
-            <a href="https://www.instagram.com/mundoyamaha/"><img src="./imag/icono2.png" alt="icono del instagram para ver mi sitio"></a>
+              <div>
+               <h2>nuestras redes</h2>
+              </div>
+              <div>
+                <div>
+                  <a href="https://www.facebook.com/yamahamundoyamaha"><img src="./imag/icono.png" alt="icono del facebook para ver nuestro sitio"></a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/mundoyamaha/"><img src="./imag/icono2.png" alt="icono del instagram para ver nuestro sitio"></a>
+                </div>
+                <div>
+                  <a href="https://twitter.com/yamahacolombia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./imag/icono3.png" alt="icono del twitter para ver nuestro sitio"></a>
+                </div>
+              </div>
           </div>
-          <div>
-            <a href="https://twitter.com/yamahacolombia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./imag/icono3.png" alt="icono del twitter para ver mi sitio"></a>
-          </div>
-        </div>
       </div>
     </footer>
-    <footer class="sedes">
-      <ul>
-        <li><a href="./contactanos.html"><strong>SAN JUAN <br>Carrera 73 Nº 44 - 10 <br>(604) 444 31 32</strong></li>
-        <li><a href="./contactanos.html"><strong>BELLO <br>Cra 50 N. 33-73 <br>(604) 444 31 32</strong></a></li>
-        <li><a href="./contactanos.html"><strong>GUAYABAL <br>Cra 52 N. 10 - 161 <br>(604) 444 91 92</strong></a></li>
-        <li><a href=./contactanos.html""><strong>AYACUCHO <br> Calle 49 Nº 39 - 58 <br>(604) 444 91 92</strong></a></li>
-        <li><a href="./contactanos.html"><strong>LA 80<br> Calle 35 Nº 81 - 07<br>(604) 444 31 32</strong></a></li>
-      </ul>
-    </footer>
+    <section class="sedes">
+      <nav>
+        <ul>
+          <li><a href="./contactanos.html"><strong>SAN JUAN <br>Carrera 73 Nº 44 - 10 <br>(604) 444 31 32</strong></li>
+          <li><a href="./contactanos.html"><strong>BELLO <br>Cra 50 N. 33-73 <br>(604) 444 31 32</strong></a></li>
+          <li><a href="./contactanos.html"><strong>GUAYABAL <br>Cra 52 N. 10 - 161 <br>(604) 444 91 92</strong></a></li>
+          <li><a href=./contactanos.html""><strong>AYACUCHO <br> Calle 49 Nº 39 - 58 <br>(604) 444 91 92</strong></a></li>
+          <li><a href="./contactanos.html"><strong>LA 80<br> Calle 35 Nº 81 - 07<br>(604) 444 31 32</strong></a></li>
+        </ul>
+      </nav>
+    </section>
+    <p>copyrigh &copy; 2022 willi hernandez - todos los derechos reservados</p> 
+  </div> 
 </body>
 
 </html>

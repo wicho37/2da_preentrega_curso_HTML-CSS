@@ -1,8 +1,7 @@
 *{
    margin: 0%;
    padding: 0%;
-  
-}
+  }
  html body {
     height: 75%;
     width: 100%;
@@ -18,18 +17,11 @@ body {
     margin: 0 auto;
     overflow: hidden;
 }
-section {
-    height: 100%; 
-    padding: 15px 8px;
-    position: relative;
-    width: 100%;
-}
 header {
     background-color: rgba(28, 8, 3, 0.297) ;
     padding: 2px;
     position: fixed;
     width: 100%;
-    z-index: 100;
     display: flex;  
     height:  50px;
 }
@@ -50,7 +42,6 @@ header .container-menu, header nav {
 }
 .menu-header li a {
    text-decoration: none;
-   
 }
 .menu-header li a:hover{
     background-color: rgb(249, 244, 237);
@@ -62,70 +53,74 @@ main {
     gap: 30px;
     align-items: center; 
     height: 50%;
-    margin-top: 65px;width: 109%;
+    margin-top: 65px;
+    width: 100%;
 }
-.section1 div h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    margin: 12px;
-}
-.section1 div p {
-    margin: 20px;
-}
-
 main div iframe {
     display: flex;
     flex-direction: column;
 }
-
-.galeria {
-    background-color:rgb(223, 142, 36, 0.9) ;
-    height: 500px ;
-    border-top: #181616 solid 2px;
+main dvi p{
+    margin: 10px 0 0 70px;
+    font-size: 22px;
+    text-align: justify;
 }
-.galeria h2 {
-    margin: 35px;
+.galeria{
+    height: 100%;
+    width:100%;
 }
-.galeria h3 {
-    margin: 20px;
- }
-.galeria div {
+.galeri .galer{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
+    height: 390px;
 }
-.galeria div div {
+.galeri div h2{
+    font-size: 65px;
+    padding-top: 25px;
+    text-align: left;
+    margin-left: 40px;
+}
+.galeri .galer div{
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    font-size: 32px;
+    transform: ;
 }
-.galeria div div a {
-    text-decoration: none;
-}
-.galeria div div img {
-    height:100%;
-    width: auto;
-    background-color: #beefea;
-}
-.automat, .deport, .cuatrim {
-    border-radius: 50%;
-}
+.galer div h3{
+    margin: 15px 0;
+    font-size: 50px;
+    text-transform: capitalize;
 
+}
+.galer div .automat{
+    border-radius: 45px;
+}
+.galer div a{
+    font-size: 22px;
+    text-decoration: none;
+    margin: 15px 0;
+}
 .noticia{
-    margin: 25px 0;
-    border: outset;
+    height: 300px;
+    text-align: left;
+    background-image: url(../imag/campaña4.jpg);
+    background-size: cover;
+    padding-top: 160px;
 }
-.imagPoli div img{
-    border: #ffc107 solid 20px;
-    width: 95%;
-}
-.imagPoli{
-    height: max-content;
+.noticia h2{
+    font-size: 204px;
+    margin-left: 50px;
+    padding-top: 60px;
+    color: floralwhite;
+    transform: scaleY(1.5);
+    height: 90px;
 }
 .m-pagos{
     border:#181616 solid 2px ;
     border-radius: 50%;
-    margin: 15px 10px;
+    margin: 60px 0 0 0;
     background-color: #85a8a4;
     width: 98%;
 }
@@ -149,7 +144,6 @@ main div iframe {
 .contacto div{
     display: flex;
     gap: 15px;
-    
 }
 .contacto div div{
     display: flex;
@@ -166,7 +160,6 @@ main div iframe {
 .contacto div div a{
    border: 2px black solid;
 }
-
 .sedes{
     background-color: rgb(223, 142, 36, 0.8)
 }
@@ -191,38 +184,41 @@ main div iframe {
     text-decoration: none;
 }
 
-
 /* index-nosotros-html */
 .section1{
-    height: auto;
-    background-color: antiquewhite;
-    border-bottom: #181616 solid 3px;
-    display: flex;
     margin-top: 54px;
-}
-.section2 {
     display: flex;
-    align-items: center;
-    height: auto;
-    background-color: cadetblue;
-    border-bottom: #181616 solid 3px;
+    height: 420px;
 }
-.section1:nth-child(1){
-    text-align: left;
+.section1 .imagsport{
+    background-color: white;
+    padding: 130px 0;
 }
-
+.section1 div div {
+    font-size: 21px;
+    text-align: justify;
+    margin: 28px;
+}
+.section1 div div h1{
+    padding: 12px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.section1 .section2{
+    margin: 33px 17px;
+    font-size: 17px;
+    width: 350px;
+}
+.section1 .section2 div{
+    text-align: justify;
+}
 /* cierre index-nosotros-html  */
-
 
 /* inicio index galeria html*/
 .gale {
 	 padding-bottom: 3em; 
-     margin: 0;
-     background-color: bisque;
-     height: fit-content;
-     border-bottom: groove;
 }
-    .gale2 {
+.gale2 {
 	width:100%;
 	max-width: 110rem;
 	margin: 28px;
@@ -240,6 +236,10 @@ main div iframe {
 	z-index: 0;
 	transition: all .4s;
 }
+.gale2 ul li:hover{
+    transform: rotate(0deg)scale(1.25);
+    z-index: 20;
+}
 .gale2 ul li a img{
 	display: block;
 	width: 250px;
@@ -251,9 +251,12 @@ main div iframe {
 	margin: 0 6px 20px;
 	padding: 10px 10px 25px;
 	position:relative ;
-	z-index:0 ;
+	z-index:20 ;
 	text-decoration: none ;
 	display: inline-block;
+}
+.gale2 ul li a:hover{
+    transform: rotate(0deg)scale(1.25);
 }
 .gale2 ul li a:after {
 	content: attr(title);
@@ -280,19 +283,18 @@ main div iframe {
     border-bottom: #334 solid 2px;
     margin: 55px;
 }   
-
 /* cierre index galeria html*/
-
-
 
 /* inicio html- servicios */
 .servicios {
     height: 95%;
+    padding: 0;
 }
 .servicios .serfinan{
     display: flex;
-    top: 39px;
+    top: 54px;
     background: wheat;
+    background-image: linear-gradient(-16deg,red, #00000038);
     margin-bottom: 40px;
     align-items: center;
     height: 75%;
@@ -300,58 +302,83 @@ main div iframe {
     position: relative;
     width: 100%;
 }
+.serfinan div div {
+    font-size: 25px;
+    text-align: end;
+    margin: 10px;
+}
+.serfinan div div h1{
+    text-transform: uppercase;
+    font-size: 41px;
+    margin-bottom: 25px;
+}
 .serfinan div img{
-    margin: 15px;
+    margin: 31px;
     border: black 2px solid;
 }
+.servicios .serviseguro{
+    height: 360px;
+}
 .serviseguro{
-    background-color: bisque;
-    background-image: linear-gradient(2255deg, #df8e24cc, transparent);
+    background-image: url("../imag/todoriesgo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top: solid 2px;
 }
 .serviseguro div{
     display: flex;
-    padding-left: 225px;
+    width: 85%;
 }
-.serviseguro div h1{
-    margin-bottom: 10px;
-    padding: 10px;
+.serviseguro div div {
+    font-size: 45px;
+    margin: 10px;
+    padding: 24px;
 }
-.serviseguro p {
+.serviseguro div div ul li{
+    height: 36px;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0 31px;
+    color: #b10f0f;
+}
+.serviseguro div .motor{
+        height: 265px;
+        width: 100%;
+}
+.serviseguro div .motor p{
+    margin: 0 40px;
+    font-size: 18px;
+    padding: 32px;
+    width: 180px;
     text-align: left;
-    font-family: system-ui;
-    padding: 2px; 
+    color: blue;
 }
-.servicios .serviseguro{
-    height: 30%;
-    padding: 15px 6px;
-    padding-left: 35px;
-} 
 .servicios .seguro{
-    display: flex;
-    align-items: self-start;
-    text-align: left;
-    height: 49%;
     padding: 15px;
-    background-color: lightblue;
-    background-image: linear-gradient(-21deg, #4545f9, transparent);
-    border-left: double 4px;
+    background-image: url("../imag/riesgo.jpg");
+    height: 560px;
 }
 .servicios .seguro div{
-    width: 50%;
+    width: 99%;
     margin: 10px;
 }
-.servicios .seguro div img{
-    border: black solid;
-    height: 300px;
+.seguro .segursoat{
+    display: flex;
 }
-.servicios .sedes ul li {
-    margin: 0 30px 0 30px;
+.segursoat h3{
+   text-transform: uppercase;
+    font-size: 41px;
 }
-
+.segursoat div p{
+    text-align: justify;
+    font-size: 22px;
+    color:white ;
+}
+.segursoat .soat div{
+    height: 75%;
+    margin: 58px 0;
+}
 /* cierre html- servicios */
-
-
 
 /* inicio index contactanos */
 .container{
@@ -361,17 +388,22 @@ main div iframe {
 #main-area{
     height: 90%;
     margin-top: 24px;
-    width: 103%;
+    width: 100%;
 }
 #main-area .post{
-    
+    margin-top: 27px;
     width: 100%;
     background-color: antiquewhite;
     border: solid;
 }
+.post .titular {
+        margin: 25px;
+        font-size: 25px;
+}
 #contacto #formulario, #contacto #mapa {
     float: left;
     width: 50%;
+    height: 510px;
 }
 #contacto #formulario {
     text-align: left;
@@ -379,7 +411,7 @@ main div iframe {
 #contacto #mapa iframe {
 	border: solid;
 	height: 480px;
-	width: 95%; 
+	width: 90%; 
     margin-bottom: 10px;
     border: solid;
 }
@@ -395,98 +427,55 @@ main div iframe {
     background: linear-gradient(rgba( 0, 210, 100, 1), rgba(0, 130, 60, 1));
     border: 0;
     color: rgba(255, 255, 255, 1);
+    width: 92%;
 }
 label{
     display: flex;
     width: 95%;
 }
-#formulario form div p label{
-    margin-top: 20px;
-}
 #formulario div input{
     width: 20px;
 }
-
 /* cierre index contactanos */
 
-
-
-
 /* inicio html-noticias*/
-
-aside{
-  height: 930px;
-}
 aside div{
-    margin-top: 90px;
-}
-aside div div{
-    width: 100%;
+    margin-top: 54px;
 }
 aside div h1{
     background-image:url("../imag/estacion.jpg");
     height: 195px;
-    margin: 15px;
-    font-size: 135px;
+    font-size: 135px; 
     color: darkgray;
+    width: 100%; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
-.row{
-    display: flex;
-    height: 550px;
-    justify-content: center;
-   
-   
+.card div h2{
+    margin: 12px ;
 }
-.row .card {
-    margin: 30px;
-    height: 390px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-} 
-.card .card-body .card-title{
-    margin: 10px 0;
-    font-family: math;
-    color: rgba(0, 0, 0, .7);
-    text-transform: uppercase;
-    font-size: 25px;
-}
-.card .card-body .card-text{
-    color: crimson;
-    font-family: system-ui;
+.cards .card .card-text{
     text-align: justify;
-    margin-bottom: 25px;
 }
-.btn{
-    text-decoration: none;
-    font-size: 20px;
-}   
-.btn:hover{
-    background-color: cadetblue;
-    border-radius: 5px;
-    padding: 6px;
-}
-
-
-/* cierre html-galeria */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* vista mobil */ 
 
-@media screen and (min-width: ≥576px) { 
+@media screen and (max-width: 576px) { 
     header{
         background-color: #93c7c7;
         padding: 2px;
@@ -575,6 +564,37 @@ aside div h1{
         text-align: justify;
         margin: 0 30px;
     }
+/*     html-nosotros*/
+    .section1{
+        display: block;
+    }
+    .section2 div p{
+        text-align: justify;
+        margin: 15px;
+        color: white;
+    }
+    .contacto{
+        width: 88%;
+    }
+    .contacto h2{
+        flex-direction: row-reverse;
+    }
+    .contacto div{
+        height: 123px;
+        margin-top: 10px;
+    }
+    .contacto div .redes{
+        margin-left: 57px;
+    }
+    article {
+        text-align: justify;
+        margin: 10px;
+    }
+    article div p {
+        text-align: justify;
+        margin: 10px;
+    }
+   
 }
 
 /* cierre vista mobil */
