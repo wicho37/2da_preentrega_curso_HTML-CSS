@@ -3,7 +3,7 @@
    padding: 0%;
   }
  html body {
-    height: 75%;
+    height: 100%;
     width: 100%;
 }
 body {
@@ -29,9 +29,9 @@ header img {
     height: 100%;
 }
 header .container-menu, header nav {
-    width: 90%;
-    height: 100%;
-}
+    width: 100%;
+    height: 100%; 
+} 
 .menu-header {
     display: flex;
     justify-content: space-around;
@@ -60,10 +60,14 @@ main div iframe {
     display: flex;
     flex-direction: column;
 }
-main dvi p{
+main div p{
     margin: 10px 0 0 70px;
     font-size: 22px;
     text-align: justify;
+}
+main div h1{
+    font-size: 50px;
+    text-transform: uppercase;
 }
 .galeria{
     height: 100%;
@@ -86,21 +90,18 @@ main dvi p{
     flex-direction: column;
     align-items: center;
     font-size: 32px;
-    transform: ;
 }
 .galer div h3{
     margin: 15px 0;
     font-size: 50px;
     text-transform: capitalize;
-
-}
-.galer div .automat{
-    border-radius: 45px;
 }
 .galer div a{
-    font-size: 22px;
+    font-size: 28px;
     text-decoration: none;
     margin: 15px 0;
+    border-radius: 10px;    
+    background-color: cadetblue;
 }
 .noticia{
     height: 300px;
@@ -132,22 +133,15 @@ main dvi p{
 .m-pagos img{
     margin: 0 10px 0 10px;
 }
-.contacto {
-    margin: 35px;   
-}
 .contacto  {
-    margin: 150px 0 150 0;
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin: 35px;  
 }
 .contacto div{
     display: flex;
     gap: 15px;
-}
-.contacto div div{
-    display: flex;
-    align-items: center;
 }
 .contacto div div img{
     height: 70px;
@@ -161,28 +155,29 @@ main dvi p{
    border: 2px black solid;
 }
 .sedes{
-    background-color: rgb(223, 142, 36, 0.8)
+    background-image: linear-gradient(180deg, #85a8a4, transparent);
 }
-.sedes ul {
-    display: flex;
-    align-items:center;
-    margin: 15px 15px;
-    width: 100%;
-    height: 100px;
+.sedes nav ul{
+     display: flex; 
+     align-items: center;
+     height: 100px; 
     justify-content: center;
-    height: 100px;
-    text-decoration: none;
+    /* text-decoration: none; */
+    /* list-style: none; */
+    /* justify-content: center; */
+    gap: 20px;
+}
+.sedes nav ul li {
     list-style: none;
 }
-.sedes ul li {
-    text-align: justify;
-    margin: 0 30px;
-}
-.sedes ul li a{
-    margin: 0 15px 0 15px;
-    align-items: center;
+.sedes nav ul li a{
     text-decoration: none;
+    font-size: 22px;
 }
+.sedes nav ul li a strong{
+    margin: 0 15px 0 15px;
+}
+
 
 /* index-nosotros-html */
 .section1{
@@ -473,137 +468,104 @@ aside div h1{
     text-align: justify;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* vista mobil */ 
 
 @media screen and (max-width: 576px) { 
-    header{
-        background-color: #93c7c7;
-        padding: 2px;
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-        display: flex;
-        height: 50px;
-    }
 
-    .contenedor main{
-        margin-right: -45px;
-        gap: 10px;
-        margin:90px 0 ;
+    header {
+        height: 125px;
     }
-    main {
-        display: flex;
-        gap: 30px;
-        align-items: center;
-        height: 50%;
-        margin-top: 65px;
-        width: 109%;
-    }
-    main div p {
-        font-size: 16px;
-        margin: 0 12px;
-    }
-    .galeria div div h3{
-        font-size: 13px;
-        margin: 5px;
-    }
-    .contenedor .galeria div div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contenedor .galeria{
-        background-color: rgb(255,255,255);
-        height: 1010px;
-        border-top: #181616 solid 2px;
-    }
-    .galeria div {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        height: 900px;
-    }
-    .galeria div div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }    
-    .galeria div div .automat{
-        width: 85%;
-    }
-    .contenedor .galeria h2{
-        margin: 35px;
-    }
-    .contenedor .noticia{
-        margin: 25px 0;
-        border: outset;
-    }
-
-    .imagPoli div img{
-        width: 95%;
-        border: #96e3e2 solid 20px;
-    }
-    .m-pagos{
-        width: 97%;
-    }
-    .contenedor .contacto{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin-left: 28%;
-    }
-    .contacto h2{
-        margin-left: 50px;
-        padding: 13px;
-    }
-
-    .sedes{
-        background-color:rgb(190 235 234 / 80%);
-    }
-    .sedes ul li {
-        text-align: justify;
-        margin: 0 30px;
-    }
-/*     html-nosotros*/
-    .section1{
+    .container-menu nav .menu-header{
         display: block;
     }
-    .section2 div p{
+    .menu-header li{
+        margin: 0 0 0 30px;
+    }
+    .menu-header li a {
+        font-size: 22px;
+    }
+    header {
+       background-color: #93c7c7;
+       text-align: left;
+    }
+    main {
+        display: block;
+        margin-top: 129px;
+    }
+    main div h1{
+        font-size: 50px;
+        text-transform: uppercase;
+        padding: 15px 0 0 0;
+    }
+    main div p{
+        font-size: 20px;
+        margin: 20px;
         text-align: justify;
-        margin: 15px;
-        color: white;
+    } 
+    main iframe{
+        height: 270px;
+        width: 540px;
     }
-    .contacto{
-        width: 88%;
+    .galeria{
+        height: 1300px;
     }
-    .contacto h2{
-        flex-direction: row-reverse;
+    .galeria .galeri{
+        height: 100%;
+        gap: 90px;
     }
-    .contacto div{
-        height: 123px;
-        margin-top: 10px;
+    .galeri .galer{
+        gap: 0;
+        height: 87%;
+        display: block;
     }
-    .contacto div .redes{
-        margin-left: 57px;
+    .galer div h3{
+        font-size: 35px;
+        margin: 10px 0 0 0;
     }
-    article {
-        text-align: justify;
-        margin: 10px;
+    .galer div .automat{
+        width: 53%;
     }
-    article div p {
-        text-align: justify;
-        margin: 10px;
+    .galer div a{
+        margin: 0;
+        background-color: cadetblue;
+        padding: 5px;
+        font-size: 20px;
     }
-   
+    .noticia h2{
+        margin-left: 0;
+        font-size: 169px;
+        padding-top: 98px;
+    }
+    .sedes nav ul li a{
+      font-size: 10px;
+    }
 }
-
-/* cierre vista mobil */
-
-
-
-
-
-
-
-
-
