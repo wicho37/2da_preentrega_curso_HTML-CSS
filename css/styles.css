@@ -18,10 +18,10 @@ body {
     overflow: hidden;
 }
 header {
-    background-color: rgba(28, 8, 3, 0.297) ;
+    background-color:#85a8a4;
     padding: 2px;
     position: fixed;
-    width: 100%;
+    width: 76%;
     display: flex;  
     height:  50px;
 }
@@ -102,6 +102,7 @@ main div h1{
     margin: 15px 0;
     border-radius: 10px;    
     background-color: cadetblue;
+    width: 125px;
 }
 .noticia{
     height: 300px;
@@ -152,21 +153,18 @@ main div h1{
     align-items: center;
 }
 .contacto div div a{
-   border: 2px black solid;
+    border: 2px black solid;
 }
 .sedes{
     background-image: linear-gradient(180deg, #85a8a4, transparent);
 }
 .sedes nav ul{
-     display: flex; 
-     align-items: center;
-     height: 100px; 
+    display: flex; 
+    align-items: center;
+    height: 100px; 
     justify-content: center;
-    /* text-decoration: none; */
-    /* list-style: none; */
-    /* justify-content: center; */
     gap: 20px;
-}
+} 
 .sedes nav ul li {
     list-style: none;
 }
@@ -210,9 +208,7 @@ main div h1{
 /* cierre index-nosotros-html  */
 
 /* inicio index galeria html*/
-.gale {
-	 padding-bottom: 3em; 
-}
+
 .gale2 {
 	width:100%;
 	max-width: 110rem;
@@ -274,7 +270,7 @@ main div h1{
   } 
 .gale .gale2 h4{
     font-size: 2.2em;
-    background-color: aquamarine;
+    background-color:  #93c7c7;
     border-bottom: #334 solid 2px;
     margin: 55px;
 }   
@@ -289,7 +285,7 @@ main div h1{
     display: flex;
     top: 54px;
     background: wheat;
-    background-image: linear-gradient(-16deg,red, #00000038);
+    background-image: linear-gradient(-16deg,cadetblue, #00000038);
     margin-bottom: 40px;
     align-items: center;
     height: 75%;
@@ -315,10 +311,8 @@ main div h1{
     height: 360px;
 }
 .serviseguro{
-    background-image: url("../imag/todoriesgo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: solid 2px;
+   background-color: cadetblue;
+    background-image: linear-gradient(0deg, white, transparent);
 }
 .serviseguro div{
     display: flex;
@@ -328,6 +322,15 @@ main div h1{
     font-size: 45px;
     margin: 10px;
     padding: 24px;
+}
+.servicios .sedes ul{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    list-style: none;
 }
 .serviseguro div div ul li{
     height: 36px;
@@ -388,12 +391,13 @@ main div h1{
 #main-area .post{
     margin-top: 27px;
     width: 100%;
-    background-color: antiquewhite;
-    border: solid;
 }
-.post .titular {
-        margin: 25px;
-        font-size: 25px;
+#main-area .post .titular{
+    margin: 25px;
+    font-size: 25px;
+}
+#main-area .post .titular p{
+    margin: 15px 60px 0 0;
 }
 #contacto #formulario, #contacto #mapa {
     float: left;
@@ -422,22 +426,32 @@ main div h1{
     background: linear-gradient(rgba( 0, 210, 100, 1), rgba(0, 130, 60, 1));
     border: 0;
     color: rgba(255, 255, 255, 1);
-    width: 92%;
+    width: 70%;
+    margin-left: 15%;
 }
 label{
     display: flex;
     width: 95%;
 }
-#formulario div input{
-    width: 20px;
+#formulario form div p{
+    font-size: 19px;
+    text-align: justify;
+    margin: 10px 0 0 10px;
+
+}
+#formulario form div p input{
+    width: 40px;
 }
 /* cierre index contactanos */
 
 /* inicio html-noticias*/
-aside div{
-    margin-top: 54px;
+.notitulo{
+    margin: 129px 0 0 0;
 }
-aside div h1{
+.notitulo div{
+    margin-top: 20px;
+}
+.notitulo div h1{
     background-image:url("../imag/estacion.jpg");
     height: 195px;
     font-size: 135px; 
@@ -453,7 +467,7 @@ aside div h1{
 
 .card {
     display: grid;
-    grid-template-rows: max-content 200px 1fr;
+    grid-template-rows: max-content 180px 1fr;
 }
 
 .card img {
@@ -466,34 +480,9 @@ aside div h1{
 }
 .cards .card .card-text{
     text-align: justify;
+    font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* cierre html-noticias*/
 
 
 
@@ -502,7 +491,10 @@ aside div h1{
 @media screen and (max-width: 576px) { 
 
     header {
-        height: 125px;
+        height: 125px; 
+        background-color:  #85a8a4;
+        text-align: left;
+        width: 100%;
     }
     .container-menu nav .menu-header{
         display: block;
@@ -513,12 +505,11 @@ aside div h1{
     .menu-header li a {
         font-size: 22px;
     }
-    header {
-       background-color: #93c7c7;
-       text-align: left;
-    }
     main {
         display: block;
+        margin-top: 129px;
+    }
+    #main-area .post{
         margin-top: 129px;
     }
     main div h1{
@@ -535,37 +526,102 @@ aside div h1{
         height: 270px;
         width: 540px;
     }
-    .galeria{
-        height: 1300px;
+    #formulario form div p {
+        font-size: 14px;
     }
-    .galeria .galeri{
-        height: 100%;
-        gap: 90px;
-    }
-    .galeri .galer{
-        gap: 0;
-        height: 87%;
+    .gale .gale2{
         display: block;
-    }
-    .galer div h3{
-        font-size: 35px;
-        margin: 10px 0 0 0;
-    }
-    .galer div .automat{
-        width: 53%;
-    }
-    .galer div a{
+        top: 85px;
         margin: 0;
-        background-color: cadetblue;
-        padding: 5px;
+        height: 1830px;
+    }
+    .gale .gale2 div div div ul li a img{
+        width: 160px;
+    }
+    .gale .gale2 div div div ul{
+        height: 450px;
+     }
+     .section1{
+        margin-top: 128px;
+        height: 485px;
+        display: contents;
+    }
+    .section1 div div{
+        margin: 0;
+    }
+    .section1 div div h1{
+        text-align: center;
+    }
+    .section1 .section2{
+        display: flex;
+        margin: 0px;
+        width: 100%;
         font-size: 20px;
     }
+    .section1 .section2 div{
+        margin: 0 17px 0 17px;
+    }
+    .section2 div img{
+        width: 240px;
+        height: 262px;
+    }
+    .section1 div text{
+        margin: 15px;
+    }
+    .mi-noti .notitulo div{
+        margin-top: 0px;
+    }
+    .post .titular p{
+        margin: 15px 12px 0 0;
+    }
+    .galeri .galer{
+        display: inline;
+    }
+    .galeri .galer div{
+        font-size: 30px;
+        display: flow-root;
+    }
+    .galer div a {
+        padding: 3px 15px;
+        font-size: 20px;
+    }
+    .galeria .galeri{
+        background-color: cadetblue;
+        background-image: linear-gradient(180deg, white, transparent);
+        height: 1020px;
+    }
+    .noticia{
+        height: 215px;
+    }
     .noticia h2{
-        margin-left: 0;
-        font-size: 169px;
-        padding-top: 98px;
+        font-size: 136px;
+    }
+    .contacto div{
+       display: block;
+    }
+    .contacto div div div{
+        display: flex;
+        gap: 90px;
+    }
+    .contacto div div div h2{
+        margin: 5px 0 15px 0;
+    }
+    .sedes nav ul{
+        align-items: center;
+        gap: 3px;
     }
     .sedes nav ul li a{
-      font-size: 10px;
+        font-size: 10px;
     }
+    .sedes nav ul li a strong{
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+    
 }
