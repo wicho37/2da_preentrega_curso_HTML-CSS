@@ -1,0 +1,32 @@
+galer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 390px;
+    h2{
+        font-size: 65px;
+        padding-top: 25px;
+        text-align: left;
+        margin-left: 40px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 32px;
+            h3{
+                margin: 15px 0;
+                font-size: 50px;
+                text-transform: capitalize;
+                a{
+                    font-size: 28px;
+                    text-decoration: none;
+                    margin: 15px 0;
+                    border-radius: 10px;    
+                    background-color: cadetblue;
+                    width: 125px;
+                    
+                }
+            }
+        }
+    }
+}
