@@ -30,4 +30,58 @@ header img {
   padding: 6px;
 }
 
+main {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  height: 520px;
+  margin-top: 65px;
+  width: 100%;
+}
+main iframe {
+  display: flex;
+  flex-direction: column;
+}
+main iframe p {
+  margin: 10px 0 0 70px;
+  font-size: 22px;
+  text-align: justify;
+}
+main iframe p h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+galer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  height: 390px;
+}
+galer h2 {
+  font-size: 65px;
+  padding-top: 25px;
+  text-align: left;
+  margin-left: 40px;
+}
+galer h2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+}
+galer h2 div h3 {
+  margin: 15px 0;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+galer h2 div h3 a {
+  font-size: 28px;
+  text-decoration: none;
+  margin: 15px 0;
+  border-radius: 10px;
+  background-color: cadetblue;
+  width: 125px;
+}
+
 /*# sourceMappingURL=styles.css.map */
